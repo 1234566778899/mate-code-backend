@@ -3,7 +3,7 @@ const { BlobServiceClient } = require('@azure/storage-blob');
 const { config } = require('dotenv');
 config();
 
-const blobService = BlobServiceClient.fromConnectionString(process.env.AZURE_CONNECTION_STRING);
+const blobService = BlobServiceClient.fromConnectionString('https;AccountName=storematecode;AccountKey=66QIwhPz9ABODzT+NXoGBr8ndbg8+h4NpH8/5n+ZUeszupqrGtopIa6LszNBr9mFrDO00XGK1pLe+AStCr2R1A==;EndpointSuffix=core.windows.net');
 
 const addProducto = async (req, res) => {
     try {
