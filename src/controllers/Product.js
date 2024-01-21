@@ -7,7 +7,6 @@ const blobService = BlobServiceClient.fromConnectionString('https;AccountName=st
 
 const addProducto = async (req, res) => {
     try {
-
         const { title, description, author, videoUrl, uid, course, tools, lastUpdate, price, miniature, preview, zip } = req.body;
         const files = req.files;
 
